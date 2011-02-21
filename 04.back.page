@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <background-color>0.95 0.95 0.95</background-color>
+  <function-blocks>
+    <block type="group" anchor="top-left" referential-anchor="top-left" id="other-app">
+      <state>
+        <position>@pos</position>
+        <size>100% 90px</size>
+      </state>
+      <blocks>
+        <block type="image" anchor="top-left" referential-anchor="top-left" autosize="yes">
+          <image>@icon</image>
+        </block>
+        <block type="string" anchor="top-left" referential-anchor="top-left">
+          <background-color>0.95 0.95 0.95</background-color>
+          <foreground-color>0.44 0.44 0.44</foreground-color>
+          <string>@title</string>
+          <state>
+            <position>70px 0</position>
+            <size>200px 25px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>17px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+        </block>
+        <block type="string" anchor="top-left" referential-anchor="top-left" autosize="yes">
+          <background-color>0.95 0.95 0.95</background-color>
+          <foreground-color>0.58 0.58 0.58</foreground-color>
+          <string>@description</string>
+          <state>
+            <position>70px 25px</position>
+            <size>390px 65px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue</name>
+            <size>15px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+          </paragraph-style>
+        </block>
+      </blocks>
+    </block>
+  </function-blocks>
+  <blocks>
+  <!-- Header -->
+    <block type="group" anchor="top-left" referential-anchor="top-left" id="header">
+      <state>
+        <size>100% 350px</size>
+      </state>
+      <state id="landscape">
+        <size>100% 330px</size>
+      </state>
+      <blocks>
+        <block type="image" id="header-portrait" anchor="bottom-left" referential-anchor="bottom-left" autosize="yes">
+          <image>header.jpg</image>
+          <state id="portrait">
+            <position>-220px 0px</position>
+          </state>
+          <state id="landscape">
+            <position>0px 0px</position>
+          </state>
+        </block>
+        <block type="string" id="title" anchor="top-left" referential-anchor="top-left">
+          <string>At Cooliris, we turn digital content into immersive experiences.</string>
+          <foreground-color>0.95 0.95 0.95</foreground-color>
+          <state id="portrait">
+            <position>50px 25px</position>
+            <size>500px 75px</size>
+          </state>
+          <state id="landscape">
+            <position>50px 35px</position>
+            <size>400px 110px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>28px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+          </paragraph-style>
+        </block>
+      </blocks>
+    </block>
+    
+  <!-- About text -->
+    <block type="group" id="about" anchor="top-left" referential-anchor="top-left">
+      <clipping>yes</clipping>
+      <state>
+        <position>60px 390px</position>
+        <size>430px 215px</size>
+      </state>
+      <state id="landscape">
+        <position>50px 360px</position>
+      </state>
+      <blocks>
+        <block type="string" anchor="top-left" referential-anchor="top-left">
+          <background-color>0.95 0.95 0.95</background-color>
+          <foreground-color>0.44 0.44 0.44</foreground-color>
+          <string>About Cooliris</string>
+          <state>
+            <size>200px 35px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue</name>
+            <size>30px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+        </block>
+        <block type="string" anchor="top-left" referential-anchor="top-left" autosize="yes">
+          <background-color>0.95 0.95 0.95</background-color>
+          <foreground-color>0.58 0.58 0.58</foreground-color>
+          <string>Headquartered in Palo Alto, California, Cooliris focuses on creating best-in-class user experiences for contextual discovery, social interaction and commerce of digital content. 
+
+Whether we're transforming online media browsing with our popular Cooliris 3D Wall browser addon or introducing a new paradigm for window shopping with Decks for iPad, we're passionate about pioneering rich, intuitive user experiences across mobile and Web.</string>
+          <state>
+            <position>0px 40px</position>
+            <size>100% 175px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue</name>
+            <size>15px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+            <line-breaking>wrap-words</line-breaking>
+          </paragraph-style>
+        </block>
+      </blocks>
+    </block>
+  
+  <!-- Related products -->
+    <block type="group" id="about" anchor="top-left" referential-anchor="top-left">
+      <state>
+        <position>60px 600px</position>
+        <size>460px 200px</size>
+      </state>
+      <state id="landscape">
+        <position>500px 360px</position>
+         <size>460px 220px</size>
+      </state>
+      <blocks>
+        <block type="string" anchor="top-left" referential-anchor="top-left">
+          <background-color>0.95 0.95 0.95</background-color>
+          <foreground-color>0.44 0.44 0.44</foreground-color>
+          <string>Check out our other apps in the iTunes App Store:</string>
+          <state>
+            <size>100% 40px</size>
+          </state>
+          <font>
+            <name>Helvetica Neue Bold</name>
+            <size>18px</size>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+        </block>
+        <block type="function" source-id="other-app" id="discover">
+          <pos>0px 40px</pos>
+          <icon>discover-icon.png</icon>
+          <title>Discover by Cooliris</title>
+          <description>Explore Wikipedia like a beautiful magazine. Sit back, relax, and expand your knowledge.</description>
+        </block>
+        <block type="function" source-id="other-app" id="liveshare">
+          <pos>0px 120px</pos>
+          <icon>liveshare-icon.png</icon>
+          <title>LiveShare by Cooliris</title>
+          <description>Create group photo streams with friends on the fly and enjoy everyone's photos all in one place. Available for iPhone and coming soon to iPad.</description>
+        </block>
+      </blocks>
+    </block>
+    <block type="image" id="logo" anchor="bottom-right" referential-anchor="bottom-right" autosize="yes">
+      <state>
+         <position>-22px -20px</position>
+      </state>
+      <state id="landscape">
+         <position>-22px -15px</position>
+      </state>
+      <image>Cooliris-Logo.png</image>
+    </block>
+  </blocks>
+</page>

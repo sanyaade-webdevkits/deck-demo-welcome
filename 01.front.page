@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <background-color>0.0 0.0 0.0</background-color>
+  <blocks>
+    <!-- *********** Title Group ********** -->
+    <block type="group" referential-anchor="top-center" anchor="top-center">
+      <state>
+        <size>520px 310px</size>
+      </state>
+      <state id="portrait">
+        <position>0px 170px</position>
+      </state>
+      <state id="landscape">
+        <position>0px 120px</position>
+      </state>
+      <blocks>
+        <!-- Title -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>100% 150px</size>
+            <position>0px 70px</position>
+          </state>
+          <font>
+            <size>120px</size>
+            <name>Helvetica Neue Medium</name>
+            <kerning>20px</kerning>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.0 0.0 0.0</background-color>
+          <string>Decks</string>
+        </block>
+        <!-- Title Reflection -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <direction>down-flipped</direction>
+          <state>
+            <size>620px 150px</size>
+            <position>0px 165px</position>
+            <opacity>0.4</opacity>
+          </state>
+          <font>
+            <size>120px</size>
+            <name>Helvetica Neue Medium</name>
+            <kerning>20px</kerning>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <string>Decks</string>
+        </block>
+        <!-- Subtitle -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>100% 90px</size>
+          </state>
+          <font>
+            <size>70px</size>
+            <name>Helvetica Neue Light</name>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.0 0.0 0.0</background-color>
+          <string>Welcome to</string>
+        </block>
+        <!-- Gradient -->
+        <block type="image" referential-anchor="bottom-right" anchor="bottom-right">
+          <state>
+            <size>100% 120px</size>
+          </state>
+          <image>Title-Gradient.png</image>
+        </block>
+        <!-- Text1 -->
+        <block type="string" referential-anchor="bottom-left" anchor="bottom-left">
+          <state id="portrait">
+            <size>100% 30px</size>
+            <position>4px 0px</position>
+          </state>
+          <state id="landscape">
+            <size>100% 30px</size>
+            <position>4px -40px</position>
+          </state>
+          <font>
+            <size>24px</size>
+            <name>Helvetica Neue</name>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <string>Your brand new buying experience on iPad</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Line Group ********** -->
+    <block type="group" referential-anchor="bottom-right" anchor="bottom-right">
+      <state id="portrait">
+        <size>580px 260px</size>
+        <position>0px -330px</position>
+      </state>
+      <state id="landscape">
+        <size>707px 260px</size>
+        <position>0px -164px</position>
+      </state>
+      <blocks>
+        <!-- Line1 -->
+        <block type="image" referential-anchor="bottom-right" anchor="bottom-right" autosize="yes">
+          <state id="portrait">
+            <position>-360px 0px</position>
+          </state>
+          <state id="landscape">
+            <position>-487px 0px</position>
+          </state>
+          <image>Line1.png</image>
+        </block>
+        <!-- Line2 -->
+        <block type="image" referential-anchor="bottom-right" anchor="bottom-right">
+          <state>
+            <position>-160px 0px</position>
+          </state>
+          <state id="portrait">
+            <size>200px 40px</size>
+          </state>
+          <state id="landscape">
+            <size>327px 40px</size>
+          </state>
+          <image>Line2.png</image>
+        </block>
+        <!-- Line3 -->
+        <block type="image" referential-anchor="bottom-right" anchor="bottom-right" autosize="yes">
+          <image>Line3.png</image>
+        </block>
+        <!-- Text2 -->
+        <block type="string" referential-anchor="bottom-left" anchor="bottom-left">
+          <state>
+            <size>190px 27px</size>
+            <position>0px -8px</position>
+          </state>
+          <font>
+            <size>20px</size>
+            <name>Helvetica Neue</name>
+          </font>
+          <paragraph-style>
+            <alignment>right</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.0 0.0 0.0</background-color>
+          <string>Swipe to continue</string>
+          <animations>
+            <animation id="loop" loop="yes" autoreverse="yes">
+              <keyframe time="0.0">
+                <opacity>1.0</opacity>
+              </keyframe>
+              <keyframe time="0.9" pacing="ease-in">
+                <opacity>0.0</opacity>
+              </keyframe>
+            </animation>
+          </animations>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

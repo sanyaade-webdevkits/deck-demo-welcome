@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <background-color>0.95 0.95 0.95</background-color>
+  <blocks>
+    <!-- *********** Icon ********** -->
+    <block type="image" referential-anchor="top-center" anchor="top-center" autosize="yes">
+      <state id="portrait">
+        <position>0px 200px</position>
+      </state>
+      <state id="landscape">
+        <position>0px 120px</position>
+      </state>
+      <image>Icon.png</image>
+    </block>
+    <!-- *********** Tap Group ********** -->
+    <block type="group" referential-anchor="bottom-center" anchor="bottom-center">
+      <state>
+        <size>430px 40px</size>
+      </state>
+      <state id="portrait">
+        <position>0px -230px</position>
+      </state>
+      <state id="landscape">
+        <position>0px -120px</position>
+      </state>
+      <animations>
+        <animation id="loop" loop="yes" autoreverse="yes">
+          <keyframe time="0.0">
+            <opacity>1.0</opacity>
+          </keyframe>
+          <keyframe time="0.9" pacing="ease-in-out">
+            <opacity>0.0</opacity>
+          </keyframe>
+        </animation>
+      </animations>
+      <blocks>
+        <!-- Icon -->
+        <block type="image" referential-anchor="center-left" anchor="center-left" autosize="yes">
+          <image>Tap-Icon.png</image>
+        </block>
+        <!-- Text -->
+        <block type="string">
+          <state>
+            <size>400px 30px</size>
+            <position>15px 0px</position>
+          </state>
+          <font>
+            <size>22px</size>
+            <name>Helvetica Neue</name>
+          </font>
+          <foreground-color>0.25 0.25 0.25</foreground-color>
+          <background-color>0.95 0.95 0.95</background-color>
+          <string>Tap anywhere to flip back and continue.</string>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <background-color>0.0 0.0 0.0</background-color>
+  <blocks>
+    <!-- Title -->
+    <block type="string" referential-anchor="bottom-left" anchor="bottom-left">
+      <state>
+        <size>400px 100px</size>
+      </state>
+      <state id="portrait">
+        <position>100px -210px</position>
+      </state>
+      <state id="landscape">
+        <position>100px -50px</position>
+        <scale>0.8</scale>
+      </state>
+      <font>
+        <size>80px</size>
+        <name>Helvetica Neue Medium</name>
+      </font>
+      <paragraph-style>
+        <alignment>left</alignment>
+      </paragraph-style>
+      <foreground-color>1.0 1.0 1.0</foreground-color>
+      <background-color>0.0 0.0 0.0</background-color>
+      <string>Navigation</string>
+    </block>
+    <!-- Image1 -->
+    <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+      <state id="portrait">
+        <position>100px 140px</position>
+      </state>
+      <state id="landscape">
+        <position>200px 50px</position>
+      </state>
+      <image>Navigation1.png</image>
+    </block>
+    <!-- Image2 -->
+    <block type="image" referential-anchor="top-right" anchor="top-right" autosize="yes">
+      <state id="portrait">
+        <position>-90px 140px</position>
+      </state>
+      <state id="landscape">
+        <position>-200px 50px</position>
+      </state>
+      <image>Navigation2.png</image>
+    </block>
+    <!-- *********** Explain Group ********** -->
+    <block type="group" referential-anchor="bottom-left" anchor="bottom-left">
+      <state>
+        <size>490px 92px</size>
+      </state>
+      <state id="portrait">
+        <position>100px -100px</position>
+      </state>
+      <state id="landscape">
+        <position>500px -24px</position>
+      </state>
+      <blocks>
+        <!-- Mark1 -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>0px 4px</position>
+          </state>
+          <image>Front-Mark.png</image>
+        </block>
+        <!-- Explain1  -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>450px 24px</size>
+            <position>20px 0px</position>
+          </state>
+          <font>
+            <size>20px</size>
+            <name>Helvetica Neue</name>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.0 0.0 0.0</background-color>
+          <string>To browse cards within a deck, swipe left or right.</string>
+        </block>
+        <!-- Mark2 -->
+        <block type="image" referential-anchor="top-left" anchor="top-left" autosize="yes">
+          <state>
+            <position>0px 38px</position>
+          </state>
+          <image>Front-Mark.png</image>
+        </block>
+        <!-- Explain2  -->
+        <block type="string" referential-anchor="top-left" anchor="top-left">
+          <state>
+            <size>350px 24px</size>
+            <position>20px 34px</position>
+          </state>
+          <font>
+            <size>20px</size>
+            <name>Helvetica Neue</name>
+          </font>
+          <paragraph-style>
+            <alignment>left</alignment>
+          </paragraph-style>
+          <foreground-color>1.0 1.0 1.0</foreground-color>
+          <background-color>0.0 0.0 0.0</background-color>
+          <string>To change decks, swipe up or down.</string>
+        </block>
+      </blocks>
+    </block>
+    <!-- *********** Line Group ********** -->
+    <block type="group" referential-anchor="bottom-center" anchor="bottom-center">
+      <state id="portrait">
+        <size>758px 260px</size>
+        <position>0px -330px</position>
+      </state>
+      <state id="landscape">
+        <size>1014px 260px</size>
+        <position>0px -164px</position>
+      </state>
+      <blocks>
+        <!-- Line Left -->
+        <block type="image" referential-anchor="bottom-left" anchor="bottom-left" autosize="yes">
+          <image>Line6.png</image>
+        </block>
+        <!-- Line Center -->
+        <block type="image" referential-anchor="bottom-center" anchor="bottom-center">
+          <state id="portrait">
+            <size>438px 40px</size>
+          </state>
+          <state id="landscape">
+            <size>694px 40px</size>
+          </state>
+          <image>Line2.png</image>
+        </block>
+        <!-- Line Right -->
+        <block type="image" referential-anchor="bottom-right" anchor="bottom-right" autosize="yes">
+          <state id="portrait">
+            <size>160px 260px</size>
+          </state>
+          <state id="landscape">
+            <size>487px 40px</size>
+          </state>
+          <image>Line3.png</image>
+        </block>
+      </blocks>
+    </block>
+  </blocks>
+</page>
