@@ -1,3 +1,5 @@
+This software is owned by Cooliris, Inc., copyright 2011, and licensed to you under the Software License Agreement for the Decks by Cooliris Template Files and Sample Code available at http://www.decksapp.com/sample-code-license/. Read this agreement before using or downloading the decks by cooliris template files and sample code.
+
 This repository contains an example deck for the Decks iPad application by Cooliris. Decks are simply directories containing .page and .include files written using the PageKit XML format along with graphic assets.
 
 This example is the actual Welcome deck that ships with the application.
